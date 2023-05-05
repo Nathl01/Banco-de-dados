@@ -1,0 +1,60 @@
+CREATE TABLE departamento(
+  coddepto SERIAL PRIMARY KEY,
+  nomeepto VARCHAR(250)
+);
+CREATE TABLE disciplina(
+  numdisc SERIAL PRIMARY KEY,
+  nomedisc VARCHAR(250),
+  creditosdiso
+);
+CREATE TABLE titulacao(
+  codtit
+  nometit VARCHAR(250)
+);
+create table professor(
+  codprof
+  coddepto
+  codtit
+  nomeprof VARCHAR(250)
+);
+create table turma(
+  coddepto
+  numdisc
+  anosem
+  siglatur
+  capacidade
+);
+create table prof_turma(
+  cod_prof
+  coddepto
+  codtit
+  nomeprof
+);
+create table predio(
+  codpredio
+  descricaopredio
+);
+create table sala(
+  codpredio
+  numsala
+  descricaosala
+  capacidade
+);
+create table horario(
+  coddepto
+  numdisc
+  anosem
+  siglatur
+  diasem
+  horainicio
+  codpedio
+  numsala
+  numhoras
+);
+create table prereq(
+  coddepto
+  numdisc
+  coddeptoprereq
+  numdiscprereq
+);
+  
